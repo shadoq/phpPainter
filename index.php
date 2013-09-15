@@ -14,21 +14,94 @@ $_GET['img']=$_GET['img'] * 1;
 	<head>
 		<title>phpPainter</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<style>
+			html, body, div, span, object, iframe,
+			h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+			abbr, address, cite, code,
+			del, dfn, em, img, ins, kbd, q, samp,
+			small, strong, sub, sup, var,
+			b, i,
+			dl, dt, dd, ol, 
+			fieldset, form, label, legend,
+			table, caption, tbody, tfoot, thead, tr, th, td,
+			article, aside, canvas, details, figcaption, figure, 
+			footer, header, hgroup, menu, nav, section, summary,
+			time, mark, audio, video
+			{
+				margin: 0;
+				padding: 0;
+				font-size: 100.00%;
+				text-align: inherit;
+				border: 0;
+				outline: 0;
+				background: transparent;
+			}
+
+			body {
+				line-height: 120%;
+				font-family: Tahoma, Arial, Helvetica, san-serif;
+				background: #FFFFFF;
+				color: #333333;
+				font-size: 12px;
+				margin: 8px;
+				margin-top: 0px;
+				text-align: left;
+			}
+			img
+			{
+				border: 0;
+				margin: auto;
+			}
+
+			h1, h2, h3, h4, h5, h6, p, pre, blockquote, table, ol, ul, fieldset, form, menu, dir
+			{
+				margin-bottom: 0.2em
+			}
+
+			h1, h2, h3, h4, h5, h6 
+			{
+				font-size: 100%;
+				font-weight: normal;
+				margin-top: 1em;
+			}			
+			h1 
+			{
+				font-size: 22px;
+			}
+			h2 
+			{
+				font-size: 20px;
+			}
+			h3 
+			{
+				font-size: 18px;
+			}
+			h4
+			{
+				font-size: 16px;
+			}
+			h5 
+			{
+				font-size: 14px;
+			}			
+		</style>
+		
 	</head>
 	<body>
 
 		<h1 style="text-align: center;">PhpPainter</h1>
 		<div>
-			<a href="test.php?sample=image&img=<?php echo $_GET['img'] ?>">Image color process</a> | 
-			<a href="test.php?sample=scale&img=<?php echo $_GET['img'] ?>">Scale and flip</a> | 
-			<a href="test.php?sample=edge&img=<?php echo $_GET['img'] ?>">Edge Detec</a> | 
-			<a href="test.php?sample=filter&img=<?php echo $_GET['img'] ?>">Image filter</a> | 
-			<a href="test.php?sample=blur&img=<?php echo $_GET['img'] ?>">Blur and sharpen filter</a>
+			<a href="index.php?sample=image&img=<?php echo $_GET['img'] ?>">Image color process</a> | 
+			<a href="index.php?sample=scale&img=<?php echo $_GET['img'] ?>">Scale and flip</a> | 
+			<a href="index.php?sample=edge&img=<?php echo $_GET['img'] ?>">Edge Detec</a> | 
+			<a href="index.php?sample=filter&img=<?php echo $_GET['img'] ?>">Image filter</a> | 
+			<a href="index.php?sample=blur&img=<?php echo $_GET['img'] ?>">Blur and sharpen filter</a>
 		</div>
 		<div style="padding: 20px;">
-			<a href="test.php?img=1&sample=<?php echo strip_tags($_GET['sample']) ?>"><img src="test_image/1.jpg" width="128" height="96"></a>
-			<a href="test.php?img=2&sample=<?php echo strip_tags($_GET['sample']) ?>"><img src="test_image/2.jpg" width="128" height="96"></a>
-			<a href="test.php?img=3&sample=<?php echo strip_tags($_GET['sample']) ?>"><img src="test_image/3.jpg" width="128" height="96"></a>
+			<a href="index.php?img=1&sample=<?php echo strip_tags($_GET['sample']) ?>"><img src="test_image/1.jpg" width="128" height="96"></a>
+			<a href="index.php?img=2&sample=<?php echo strip_tags($_GET['sample']) ?>"><img src="test_image/2.jpg" width="128" height="96"></a>
+			<a href="index.php?img=3&sample=<?php echo strip_tags($_GET['sample']) ?>"><img src="test_image/3.jpg" width="128" height="96"></a>
 		</div>
 		
 		<div style="text-align: center; float: left; padding: 5px;">
