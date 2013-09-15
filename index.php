@@ -2,7 +2,11 @@
 include('phpPainter.php');
 $painter=new PhpPainter();
 
+if (empty($_GET['img'])){
+	$_GET['img']=1;
+}
 $_GET['img']=$_GET['img'] * 1;
+
 ?>
 
 <!DOCTYPE html>
